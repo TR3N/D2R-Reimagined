@@ -1,0 +1,135 @@
+{
+    "desecrated_zones": [
+        {
+            "start_time_utc": "2023-01-27 00:00:00",
+            /* "end_time_utc": "2022-12-15 00:00:00", */ /* Use end time to automate multiple configs. Useful for events. */
+            "terror_duration_min": 60,
+            "terror_break_min": 0,
+            "seed": 16664395743969097666, /* UInt64. Can't be above 18446744073709551615 */
+            "non_ladder_enabled": true,
+            "enabled_normal": true,
+            "enabled_nightmare": true,
+            "enabled_hell": true,
+            "default_normal": {
+                "bound_incl_min": 3, /* Minimum level of a terrorized monster. MAX(bound_incl_min, original_monster_level) */
+                "bound_incl_max": 45, /* Maximum level of a terrorized monster. MAX(bound_incl_max, original_monster_level) */
+                "boost_level": 2, /* player_level + boost_level = terrorized_monster_level */
+                "difficulty_scale": 1, /* Fake the amount of players in the game. AKA /players X */
+                "boost_experience_percent": 25 /* Bonus experience percentage applied at to the monster's base experience in monstats.txt */
+            },
+            "default_nightmare": {
+                "bound_incl_min": 40,
+                "bound_incl_max": 71,
+                "boost_level": 2,
+                "difficulty_scale": 1,
+                "boost_experience_percent": 25
+            },
+            "default_hell": {
+                "bound_incl_min": 70,
+                "bound_incl_max": 99,
+                "boost_level": 2,
+                "difficulty_scale": 1,
+                "boost_experience_percent": 25
+            },
+            "warnings": [
+                {
+                    "announce_time_min": 10,
+                    "tier": 1
+                },
+                {
+                    "announce_time_min": 5,
+                    "tier": 2
+                },
+                {
+                    "announce_time_min": 1,
+                    "tier": 3
+                },
+                {
+                    /* DO NOT REMOVE! ALWAYS NEED A TIER 0 AT MINUTE 0. DO NOT REMOVE! */
+                    "announce_time_min": 0,
+                    "tier": 0
+                }
+            ],
+            "zones": [
+                {"id":1,"levels":[
+                    /* Act 1 (lvls 6) */
+                    /* BloodRaven - Buriel Grounds */
+                    {"level_id":17,"waypoint_level_id":3},
+                    /* Countess - Tower Cellar Level 5 */
+                    {"level_id":25},
+                    /* Smith - Barracks */
+                    {"level_id":28,"waypoint_level_id":27},
+                    /* Andariel - Catacombs Level 4 */
+                    {"level_id":37},
+                    /* Griswald - Tristram */
+                    {"level_id":38,"waypoint_level_id":4},
+                    /* Cow King - Moo Moo Farm */
+                    {"level_id":39,"waypoint_level_id":1},
+                    
+                    /* Act 2 (lvls 2)*/
+                    /* Radament - Sewers Level 3 */
+                    {"level_id":49},
+                    /* Summoner - Arcane Sanctuary */
+                    {"level_id":74,"waypoint_level_id":74},
+
+                    /* Act 3 (lvls 2) */
+                    /* Council - Travincal */
+                    {"level_id":83,"waypoint_level_id":83},
+                    /* Mephisto - Durance of Hate Level 3 */
+                    {"level_id":102},
+
+                    /* Act 4 (lvls 3) */
+                    /* Izual - Plains of Despair */
+                    {"level_id":105},
+                    /* Haphesto - River of Flame */
+                    {"level_id":107},
+                    /* Diablo - Chaos Sanctuary */
+                    {"level_id": 108,"waypoint_level_id":107},
+                    
+                    /* Act 5 (lvls 5) */
+                    /* Eldritch & Shenk (2) */
+                    {"level_id":110},{"level_id":111,"waypoint_level_id":111},
+                    /* Nihlathak (1) */
+                    {"level_id":124},
+                    /* Throne & Baal (2) */
+                    {"level_id":131},{"level_id":132}
+                ]},
+                {"id":2,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":3,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":4,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":5,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":6,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":7,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":8,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":9,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":10,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":11,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":12,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":13,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":14,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":15,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":16,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":17,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":18,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":19,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":20,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":21,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":22,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":23,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":24,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":25,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":26,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":27,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":28,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":29,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":30,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":31,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":32,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":33,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":34,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":35,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]},
+                {"id":36,"levels":[{"level_id":17,"waypoint_level_id":3},{"level_id":25},{"level_id":28,"waypoint_level_id":27},{"level_id":37},{"level_id":38,"waypoint_level_id":4},{"level_id":39,"waypoint_level_id":1},{"level_id":49},{"level_id":74,"waypoint_level_id":74},{"level_id":83,"waypoint_level_id":83},{"level_id":102},{"level_id":105},{"level_id":107},{"level_id":108,"waypoint_level_id":107},{"level_id":110},{"level_id":111,"waypoint_level_id":111},{"level_id":124},{"level_id":131},{"level_id":132}]}
+            ]
+        }
+    ]
+}
